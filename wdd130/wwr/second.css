@@ -61,3 +61,28 @@ footer .social img{
     text-decoration: none;
     padding: 35px;
   }
+  .first{
+    margin-left: 2%;
+  }
+.first p {
+    margin-top: 50px;
+    margin-right:50px ;
+    max-width: 100%;
+}
+.first img{
+  width: 40%;
+  height: 600px;
+  margin-left: 50%;
+}
+.second{
+    height: auto;
+    margin-left: 2%;
+  }
+  .second img{
+    width: 40%;
+    height: 600px;
+  }
+  .second p {
+    margin-top: 50px;
+    margin-left: 50%;
+}
