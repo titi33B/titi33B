@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fastshipping</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="fastshippinglogo.png" alt="fastshipping Logo" />
+      </a>
+      <div class="inner">
+        <nav>
+          <a class="links" href="subpage.html">Home</a>
+          <a class="links" href="lastpage.html">shipping</a>
+          <a class="links" href="index.html">products</a>
+        </nav>
+      </div>
+    </header>
+    <div id="content">
+        <div id="hero">
+          <div id="herobox">
+            <img id="frontimg" src="contener.jpg" alt="paking the products" />
+          </div>
+        </div>
+        <div class="schedule">
+          <div id="background">
+            <h1>customer info</h1>
+  
+            <form id="info" action="index.html">
+              <label class="letter">First name:</label>
+              <input
+                type="text"
+                placeholder="Your first name"
+                class="box"
+                name="fname"
+              />
+              <label class="letter">Last name:</label>
+              <input
+                type="text"
+                class="box"
+                placeholder="Your last name"
+                name="lname"
+              /><br /><br />
+              <label class="letter">Email:</label>
+              <input
+                type="text"
+                class="box"
+                placeholder="@gmail.com"
+                name="email"
+              />
+              <label class="letter">Contact:</label>
+              <input
+                type="tel"
+                class="box"
+                placeholder="Your phone number"
+                name="number"
+              /><br /><br />
+              <label class="letter">location:</label>
+              <input
+                type="text"
+                class="box"
+                placeholder="Addis Abeba"
+                name="adults"
+              />
+              <label class="letter"> Item catagory:</label>
+              <input
+                type="number"
+                class="box"
+                placeholder="Toy"
+                name="child"
+              /><br /><br />
+              <label class="letter"></label>
+              <label class="letter">Item number:</label>
+              <input type="number" class="box" placeholder="003" name="number" />
+              <input type="date" class="box" name="date" />
+              <br /><br />
+              <input type="submit" class="button" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+  
+      <div id="note">
+        <h1>Discription</h1>
+        <div class="detail">
+          <p>
+            My website is available for all customer to show all
+            products we have available. It will have a small description 
+            about the product. They can see the same thing at other stores that are fair and reasonable to
+            them. buying products from others, clients have options to buy your product from other stores 
+            like Amazon,walmart, costico and some others pleases.It also
+            includes the option of having the product delivered to your home at a
+            specific time. My website based on the agreement, will provide you
+            with limited-time discounts based on the description we have about
+            your interest. Location In addition, my website will value your time
+            by providing the nearest location of DHL or Post office. It makes it easy to find your
+            location. Rather than traveling to get your product.
+          </p>
+          <img src="shipto.jpg" alt="road image" />
+        </div>
+      </div>
+
+    <footer>
+        <h3> fast shipping&copy; 2022 - Tizibt Teresa</h3>
+        <nav><a href="site-plan.html">Site Plan</a></nav>
+        <!-- <h3><a href="site-plan-rafting.html">Site Plan</a></h3> -->
+        <h3><a href="contactus.html">Contact Us</a></h3>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="facebook.png" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="twitter.png" alt="twitter icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="instagram.png " alt="instagram icon" />
+          </a>
+        </div>
+        <nav></nav>
+      </footer>
+      <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById("feedback");
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener("submit", function (e) {
+          // stop the form from doing the default action.
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML =
+            "Hello " +
+            formElement.user_name.value +
+            "! Thank you for your message. We will get back with you as soon as possible!";
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+          // add a class to move everything down so our message doesn't cover it.
+          document.body.classList.toggle("moveDown");
+        });
+      </script>
+    </body>
+  </html>
+  
