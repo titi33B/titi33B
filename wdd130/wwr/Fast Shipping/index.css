@@ -38,7 +38,7 @@ body {
     text-decoration: none;
     padding: 35px;
   }
-  
+
   footer h3 {
     color: lightcoral;
   }
@@ -63,9 +63,6 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
-
-
 .inner {
   width: 90%;
   height: 100%;
@@ -250,9 +247,6 @@ img.image:hover {
     opacity: 1;
   }
 }
-
-
-
 h3 {
   color: #e5e5e5;
 }
